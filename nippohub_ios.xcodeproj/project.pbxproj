@@ -15,6 +15,9 @@
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
 		546EE3A220D7189D00B6D46C /* nippohub_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3A120D7189D00B6D46C /* nippohub_iosTests.swift */; };
 		546EE3AD20D7189D00B6D46C /* nippohub_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */; };
+		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
+		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
+		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2909A811CC448BCC3ECFF76A /* Pods-nippohub_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_ios/Pods-nippohub_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		546EE38620D7189B00B6D46C /* nippohub_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nippohub_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE38920D7189B00B6D46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546EE38B20D7189B00B6D46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		546EE3A820D7189D00B6D46C /* nippohub_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nippohub_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_iosUITests.swift; sourceTree = "<group>"; };
 		546EE3AE20D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C068BED68E4AD509A05A7461 /* Pods-nippohub_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosUITests/Pods-nippohub_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4E224A4E6E5958CDDFA3CE8 /* Pods-nippohub_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_ios/Pods-nippohub_ios.release.xcconfig"; sourceTree = "<group>"; };
+		E5A3744BF4C32075513B0300 /* Pods-nippohub_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosUITests/Pods-nippohub_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED73EFD1DBF7FF2029093001 /* Pods-nippohub_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				546EE3A020D7189D00B6D46C /* nippohub_iosTests */,
 				546EE3AB20D7189D00B6D46C /* nippohub_iosUITests */,
 				546EE38720D7189B00B6D46C /* Products */,
+				93BD71F064B2D3F86442EB57 /* Pods */,
+				E1ADEDE55FF1259EFA6B22C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = nippohub_iosUITests;
 			sourceTree = "<group>";
 		};
+		93BD71F064B2D3F86442EB57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2909A811CC448BCC3ECFF76A /* Pods-nippohub_ios.debug.xcconfig */,
+				D4E224A4E6E5958CDDFA3CE8 /* Pods-nippohub_ios.release.xcconfig */,
+				ED73EFD1DBF7FF2029093001 /* Pods-nippohub_iosTests.debug.xcconfig */,
+				7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */,
+				E5A3744BF4C32075513B0300 /* Pods-nippohub_iosUITests.debug.xcconfig */,
+				C068BED68E4AD509A05A7461 /* Pods-nippohub_iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1ADEDE55FF1259EFA6B22C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74044B35876B88966367E87F /* Pods_nippohub_ios.framework */,
+				6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */,
+				835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546EE3B120D7189D00B6D46C /* Build configuration list for PBXNativeTarget "nippohub_ios" */;
 			buildPhases = (
+				1885B4B287AF35CD5D2E8E8B /* [CP] Check Pods Manifest.lock */,
 				546EE38220D7189B00B6D46C /* Sources */,
 				546EE38320D7189B00B6D46C /* Frameworks */,
 				546EE38420D7189B00B6D46C /* Resources */,
+				0D65E08C44A2AEEEA26BBAD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546EE3B420D7189D00B6D46C /* Build configuration list for PBXNativeTarget "nippohub_iosTests" */;
 			buildPhases = (
+				3A9EC35E1D7EED3595F92F3B /* [CP] Check Pods Manifest.lock */,
 				546EE39920D7189D00B6D46C /* Sources */,
 				546EE39A20D7189D00B6D46C /* Frameworks */,
 				546EE39B20D7189D00B6D46C /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546EE3B720D7189D00B6D46C /* Build configuration list for PBXNativeTarget "nippohub_iosUITests" */;
 			buildPhases = (
+				40BDDFE8B66E26B13358B8F3 /* [CP] Check Pods Manifest.lock */,
 				546EE3A420D7189D00B6D46C /* Sources */,
 				546EE3A520D7189D00B6D46C /* Frameworks */,
 				546EE3A620D7189D00B6D46C /* Resources */,
@@ -253,6 +297,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D65E08C44A2AEEEA26BBAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nippohub_ios/Pods-nippohub_ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nippohub_ios/Pods-nippohub_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1885B4B287AF35CD5D2E8E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A9EC35E1D7EED3595F92F3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub_iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40BDDFE8B66E26B13358B8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub_iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		546EE38220D7189B00B6D46C /* Sources */ = {
@@ -432,6 +553,7 @@
 		};
 		546EE3B220D7189D00B6D46C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2909A811CC448BCC3ECFF76A /* Pods-nippohub_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +571,7 @@
 		};
 		546EE3B320D7189D00B6D46C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E224A4E6E5958CDDFA3CE8 /* Pods-nippohub_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +589,7 @@
 		};
 		546EE3B520D7189D00B6D46C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED73EFD1DBF7FF2029093001 /* Pods-nippohub_iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +610,7 @@
 		};
 		546EE3B620D7189D00B6D46C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +631,7 @@
 		};
 		546EE3B820D7189D00B6D46C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A3744BF4C32075513B0300 /* Pods-nippohub_iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +651,7 @@
 		};
 		546EE3B920D7189D00B6D46C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C068BED68E4AD509A05A7461 /* Pods-nippohub_iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
