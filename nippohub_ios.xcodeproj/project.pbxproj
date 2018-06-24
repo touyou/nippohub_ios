@@ -15,6 +15,7 @@
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
 		546EE3A220D7189D00B6D46C /* nippohub_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3A120D7189D00B6D46C /* nippohub_iosTests.swift */; };
 		546EE3AD20D7189D00B6D46C /* nippohub_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */; };
+		54B13AF720E04B2C00083E6C /* group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* group.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
 		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
@@ -53,6 +54,7 @@
 		546EE3A820D7189D00B6D46C /* nippohub_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nippohub_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_iosUITests.swift; sourceTree = "<group>"; };
 		546EE3AE20D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B13AF620E04B2C00083E6C /* group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = group.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 		546EE38820D7189B00B6D46C /* nippohub_ios */ = {
 			isa = PBXGroup;
 			children = (
+				54B13AF520E04B1000083E6C /* models */,
 				546EE38920D7189B00B6D46C /* AppDelegate.swift */,
 				546EE38B20D7189B00B6D46C /* ViewController.swift */,
 				546EE38D20D7189B00B6D46C /* Main.storyboard */,
@@ -143,6 +146,14 @@
 				546EE3AE20D7189D00B6D46C /* Info.plist */,
 			);
 			path = nippohub_iosUITests;
+			sourceTree = "<group>";
+		};
+		54B13AF520E04B1000083E6C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				54B13AF620E04B2C00083E6C /* group.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		93BD71F064B2D3F86442EB57 /* Pods */ = {
@@ -383,6 +394,7 @@
 				546EE39220D7189B00B6D46C /* nippohub_ios.xcdatamodeld in Sources */,
 				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
+				54B13AF720E04B2C00083E6C /* group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
