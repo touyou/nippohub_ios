@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AC596B20E07E5600F3C62D /* GroupIndexTableViewCell.swift */; };
+		46AC596E20E07E5600F3C62D /* GroupIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46AC596C20E07E5600F3C62D /* GroupIndexTableViewCell.xib */; };
 		546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38920D7189B00B6D46C /* AppDelegate.swift */; };
 		546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38B20D7189B00B6D46C /* ViewController.swift */; };
 		546EE38F20D7189B00B6D46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE38D20D7189B00B6D46C /* Main.storyboard */; };
-		546EE39220D7189B00B6D46C /* nippohub_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546EE39020D7189B00B6D46C /* nippohub_ios.xcdatamodeld */; };
 		546EE39420D7189D00B6D46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39320D7189D00B6D46C /* Assets.xcassets */; };
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
 		546EE3A220D7189D00B6D46C /* nippohub_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3A120D7189D00B6D46C /* nippohub_iosTests.swift */; };
 		546EE3AD20D7189D00B6D46C /* nippohub_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */; };
+		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
+		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
 		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
@@ -39,11 +42,12 @@
 
 /* Begin PBXFileReference section */
 		2909A811CC448BCC3ECFF76A /* Pods-nippohub_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_ios/Pods-nippohub_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		46AC596B20E07E5600F3C62D /* GroupIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupIndexTableViewCell.swift; sourceTree = "<group>"; };
+		46AC596C20E07E5600F3C62D /* GroupIndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupIndexTableViewCell.xib; sourceTree = "<group>"; };
 		546EE38620D7189B00B6D46C /* nippohub_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nippohub_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE38920D7189B00B6D46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546EE38B20D7189B00B6D46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		546EE38E20D7189B00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		546EE39120D7189B00B6D46C /* nippohub_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nippohub_ios.xcdatamodel; sourceTree = "<group>"; };
 		546EE39320D7189D00B6D46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546EE39620D7189D00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546EE39820D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		546EE3A820D7189D00B6D46C /* nippohub_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nippohub_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_iosUITests.swift; sourceTree = "<group>"; };
 		546EE3AE20D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46AC596A20E07E2900F3C62D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46AC596B20E07E5600F3C62D /* GroupIndexTableViewCell.swift */,
+				46AC596C20E07E5600F3C62D /* GroupIndexTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46AC596F20E0809D00F3C62D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				546EE38B20D7189B00B6D46C /* ViewController.swift */,
+				54B13AF820E053FC00083E6C /* GroupsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		546EE37D20D7189B00B6D46C = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +140,14 @@
 		546EE38820D7189B00B6D46C /* nippohub_ios */ = {
 			isa = PBXGroup;
 			children = (
+				46AC596F20E0809D00F3C62D /* Scenes */,
+				46AC596A20E07E2900F3C62D /* Views */,
+				54B13AF520E04B1000083E6C /* Models */,
 				546EE38920D7189B00B6D46C /* AppDelegate.swift */,
-				546EE38B20D7189B00B6D46C /* ViewController.swift */,
 				546EE38D20D7189B00B6D46C /* Main.storyboard */,
 				546EE39320D7189D00B6D46C /* Assets.xcassets */,
 				546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */,
 				546EE39820D7189D00B6D46C /* Info.plist */,
-				546EE39020D7189B00B6D46C /* nippohub_ios.xcdatamodeld */,
 			);
 			path = nippohub_ios;
 			sourceTree = "<group>";
@@ -143,6 +168,14 @@
 				546EE3AE20D7189D00B6D46C /* Info.plist */,
 			);
 			path = nippohub_iosUITests;
+			sourceTree = "<group>";
+		};
+		54B13AF520E04B1000083E6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54B13AF620E04B2C00083E6C /* Group.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		93BD71F064B2D3F86442EB57 /* Pods */ = {
@@ -276,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AC596E20E07E5600F3C62D /* GroupIndexTableViewCell.xib in Resources */,
 				546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */,
 				546EE39420D7189D00B6D46C /* Assets.xcassets in Resources */,
 				546EE38F20D7189B00B6D46C /* Main.storyboard in Resources */,
@@ -380,9 +414,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546EE39220D7189B00B6D46C /* nippohub_ios.xcdatamodeld in Sources */,
 				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
+				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
+				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
+				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,19 +745,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		546EE39020D7189B00B6D46C /* nippohub_ios.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				546EE39120D7189B00B6D46C /* nippohub_ios.xcdatamodel */,
-			);
-			currentVersion = 546EE39120D7189B00B6D46C /* nippohub_ios.xcdatamodel */;
-			path = nippohub_ios.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 546EE37E20D7189B00B6D46C /* Project object */;
 }

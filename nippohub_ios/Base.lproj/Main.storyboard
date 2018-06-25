@@ -111,20 +111,35 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Groups View Controller-->
         <scene sceneID="DBl-13-lGb">
             <objects>
-                <viewController id="NpT-mN-diR" sceneMemberID="viewController">
+                <viewController id="NpT-mN-diR" customClass="GroupsViewController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKW-oO-PfE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-P6-Y4j">
+                                <rect key="frame" x="8" y="186" width="359" height="431"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9qU-P6-Y4j" firstAttribute="top" secondItem="87E-dN-6K2" secondAttribute="top" constant="166" id="Tva-Tz-l3D"/>
+                            <constraint firstItem="87E-dN-6K2" firstAttribute="bottom" secondItem="9qU-P6-Y4j" secondAttribute="bottom" constant="50" id="cAN-RA-MuO"/>
+                            <constraint firstItem="87E-dN-6K2" firstAttribute="trailing" secondItem="9qU-P6-Y4j" secondAttribute="trailing" constant="8" id="crx-97-DwV"/>
+                            <constraint firstItem="9qU-P6-Y4j" firstAttribute="leading" secondItem="87E-dN-6K2" secondAttribute="leading" constant="8" id="gHO-K3-geE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="87E-dN-6K2"/>
                     </view>
+                    <connections>
+                        <outlet property="groupIndexTableView" destination="9qU-P6-Y4j" id="cjs-V9-V2C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODa-pg-hp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="118"/>
+            <point key="canvasLocation" x="981.60000000000002" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
