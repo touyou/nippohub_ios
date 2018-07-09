@@ -148,11 +148,27 @@
                     </view>
                     <connections>
                         <outlet property="groupIndexTableView" destination="9qU-P6-Y4j" id="cjs-V9-V2C"/>
+                        <segue destination="zOy-6Q-7JB" kind="show" identifier="diaryReportSegue" id="Fwj-32-xnf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODa-pg-hp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.60000000000002" y="117.39130434782609"/>
+            <point key="canvasLocation" x="857" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i9E-Eq-WTz">
+            <objects>
+                <viewController id="zOy-6Q-7JB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9k-dV-6C0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KiY-Of-WkD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-w8-zyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9hx-Iz-Zy9">
@@ -217,10 +233,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yeq-cc-gfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.60000000000002" y="873.91304347826099"/>
+            <point key="canvasLocation" x="857" y="815"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gNT-DN-nxu"/>
+        <segue reference="7th-9A-zTv"/>
     </inferredMetricsTieBreakers>
 </document>
