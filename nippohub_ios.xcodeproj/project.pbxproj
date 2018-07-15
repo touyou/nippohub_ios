@@ -16,6 +16,8 @@
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
 		546EE3A220D7189D00B6D46C /* nippohub_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3A120D7189D00B6D46C /* nippohub_iosTests.swift */; };
 		546EE3AD20D7189D00B6D46C /* nippohub_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */; };
+		54700C9420FC11D60048C029 /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9320FC11D60048C029 /* DailyReport.swift */; };
+		54700C9620FC12990048C029 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9520FC12990048C029 /* User.swift */; };
 		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
 		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
@@ -57,6 +59,8 @@
 		546EE3A820D7189D00B6D46C /* nippohub_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nippohub_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_iosUITests.swift; sourceTree = "<group>"; };
 		546EE3AE20D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54700C9320FC11D60048C029 /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
+		54700C9520FC12990048C029 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				54B13AF620E04B2C00083E6C /* Group.swift */,
+				54700C9320FC11D60048C029 /* DailyReport.swift */,
+				54700C9520FC12990048C029 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +425,8 @@
 				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
+				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,
+				54700C9620FC12990048C029 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
