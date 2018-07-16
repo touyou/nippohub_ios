@@ -18,8 +18,9 @@
 		546EE3AD20D7189D00B6D46C /* nippohub_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE3AC20D7189D00B6D46C /* nippohub_iosUITests.swift */; };
 		54700C9420FC11D60048C029 /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9320FC11D60048C029 /* DailyReport.swift */; };
 		54700C9620FC12990048C029 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9520FC12990048C029 /* User.swift */; };
-		54700C9820FC13A50048C029 /* DailyReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54700C9720FC13A50048C029 /* DailyReportTableViewCell.xib */; };
-		54700C9A20FC16970048C029 /* DailyReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9920FC16970048C029 /* DailyReportTableViewCell.swift */; };
+		54700C9820FC13A50048C029 /* DailyReportIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54700C9720FC13A50048C029 /* DailyReportIndexTableViewCell.xib */; };
+		54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9920FC16970048C029 /* DailyReportIndexTableViewCell.swift */; };
+		54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */; };
 		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
 		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
@@ -63,8 +64,9 @@
 		546EE3AE20D7189D00B6D46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54700C9320FC11D60048C029 /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
 		54700C9520FC12990048C029 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		54700C9720FC13A50048C029 /* DailyReportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportTableViewCell.xib; sourceTree = "<group>"; };
-		54700C9920FC16970048C029 /* DailyReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportTableViewCell.swift; sourceTree = "<group>"; };
+		54700C9720FC13A50048C029 /* DailyReportIndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportIndexTableViewCell.xib; sourceTree = "<group>"; };
+		54700C9920FC16970048C029 /* DailyReportIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexTableViewCell.swift; sourceTree = "<group>"; };
+		54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsViewController.swift; sourceTree = "<group>"; };
 		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,8 +112,8 @@
 			children = (
 				46AC596B20E07E5600F3C62D /* GroupIndexTableViewCell.swift */,
 				46AC596C20E07E5600F3C62D /* GroupIndexTableViewCell.xib */,
-				54700C9720FC13A50048C029 /* DailyReportTableViewCell.xib */,
-				54700C9920FC16970048C029 /* DailyReportTableViewCell.swift */,
+				54700C9720FC13A50048C029 /* DailyReportIndexTableViewCell.xib */,
+				54700C9920FC16970048C029 /* DailyReportIndexTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 			children = (
 				546EE38B20D7189B00B6D46C /* ViewController.swift */,
 				54B13AF820E053FC00083E6C /* GroupsViewController.swift */,
+				54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -321,7 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54700C9820FC13A50048C029 /* DailyReportTableViewCell.xib in Resources */,
+				54700C9820FC13A50048C029 /* DailyReportIndexTableViewCell.xib in Resources */,
 				46AC596E20E07E5600F3C62D /* GroupIndexTableViewCell.xib in Resources */,
 				546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */,
 				546EE39420D7189D00B6D46C /* Assets.xcassets in Resources */,
@@ -430,7 +433,8 @@
 				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
 				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
-				54700C9A20FC16970048C029 /* DailyReportTableViewCell.swift in Sources */,
+				54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */,
+				54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,

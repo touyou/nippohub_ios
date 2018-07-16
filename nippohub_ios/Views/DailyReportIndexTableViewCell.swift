@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DailyReportTableViewCell: UITableViewCell {
+class DailyReportIndexTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
     
