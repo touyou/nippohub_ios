@@ -155,20 +155,30 @@
             </objects>
             <point key="canvasLocation" x="857" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily Reports View Controller-->
         <scene sceneID="i9E-Eq-WTz">
             <objects>
-                <viewController id="zOy-6Q-7JB" sceneMemberID="viewController">
+                <viewController id="zOy-6Q-7JB" customClass="DailyReportsViewController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b9k-dV-6C0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bJD-ku-CmP">
+                                <rect key="frame" x="16" y="187" width="343" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KiY-Of-WkD"/>
                     </view>
+                    <connections>
+                        <outlet property="dailyReportIndexTable" destination="bJD-ku-CmP" id="a9T-bk-hd4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-w8-zyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="118"/>
+            <point key="canvasLocation" x="1584.8" y="117.39130434782609"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9hx-Iz-Zy9">

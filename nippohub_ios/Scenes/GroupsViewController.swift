@@ -27,10 +27,12 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         groupIndexTableView.reloadData()
     }
     
+    // TODO: publicいらない
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groups.count
     }
     
+    // TODO: publicいらない
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "groupItem") as! GroupIndexTableViewCell
         let group = self.groups[indexPath.row]

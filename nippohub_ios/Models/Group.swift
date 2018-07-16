@@ -9,6 +9,7 @@
 import Foundation
 
 class Group {
+    // TODO: 初期化しない　
     var name: String = ""
     var description: String = ""
     
