@@ -44,6 +44,6 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "diaryReportSegue", sender: nil)
+        self.performSegue(withIdentifier: "indexDailyReportSegue", sender: nil)
     }
 }

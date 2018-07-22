@@ -148,7 +148,7 @@
                     </view>
                     <connections>
                         <outlet property="groupIndexTableView" destination="9qU-P6-Y4j" id="cjs-V9-V2C"/>
-                        <segue destination="zOy-6Q-7JB" kind="show" identifier="diaryReportSegue" id="Fwj-32-xnf"/>
+                        <segue destination="zOy-6Q-7JB" kind="show" identifier="indexDailyReportSegue" id="Fwj-32-xnf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODa-pg-hp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
