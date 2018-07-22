@@ -35,4 +35,8 @@ class DailyReportsViewController: UIViewController, UITableViewDataSource, UITab
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDailyReportSegue", sender: nil)
+    }
 }

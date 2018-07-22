@@ -187,11 +187,27 @@
                     </view>
                     <connections>
                         <outlet property="dailyReportIndexTable" destination="bJD-ku-CmP" id="a9T-bk-hd4"/>
+                        <segue destination="u7Z-J5-MHi" kind="show" identifier="showDailyReportSegue" id="wJM-47-7O9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-w8-zyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584.8" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sXK-Os-dEB">
+            <objects>
+                <viewController id="u7Z-J5-MHi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWl-i3-Fqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="djK-ad-Lrp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ac-zP-nxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="117"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9hx-Iz-Zy9">
@@ -325,7 +341,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xED-bC-Y71"/>
+        <segue reference="Fwj-32-xnf"/>
         <segue reference="gNT-DN-nxu"/>
     </inferredMetricsTieBreakers>
 </document>
