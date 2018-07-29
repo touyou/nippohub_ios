@@ -20,7 +20,7 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         groupIndexTableView.register(UINib(nibName: "GroupIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "groupItem")
-        self.groups = [Group(name: "test1", description: "body1"), Group(name: "test2", description: "body2"), Group(name: "test3", description: "body3")]
+        self.groups = FetchGroupsService.exec()
         
         groupIndexTableView.delegate = self
         groupIndexTableView.dataSource = self
