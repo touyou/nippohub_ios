@@ -23,6 +23,10 @@
 		54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */; };
 		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
 		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
+		54BCCD60210E6EFA00CAD335 /* FetchGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */; };
+		54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD62210E73F400CAD335 /* UserJson.swift */; };
+		54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD64210E73FE00CAD335 /* GroupJson.swift */; };
+		54BCCD67210E74B800CAD335 /* GroupsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD66210E74B800CAD335 /* GroupsJson.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
 		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
@@ -69,6 +73,10 @@
 		54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsViewController.swift; sourceTree = "<group>"; };
 		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupsService.swift; sourceTree = "<group>"; };
+		54BCCD62210E73F400CAD335 /* UserJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJson.swift; sourceTree = "<group>"; };
+		54BCCD64210E73FE00CAD335 /* GroupJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupJson.swift; sourceTree = "<group>"; };
+		54BCCD66210E74B800CAD335 /* GroupsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsJson.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +161,8 @@
 		546EE38820D7189B00B6D46C /* nippohub_ios */ = {
 			isa = PBXGroup;
 			children = (
+				54BCCD61210E73DB00CAD335 /* Jsons */,
+				54BCCD5E210E6E8B00CAD335 /* Services */,
 				46AC596F20E0809D00F3C62D /* Scenes */,
 				46AC596A20E07E2900F3C62D /* Views */,
 				54B13AF520E04B1000083E6C /* Models */,
@@ -191,6 +201,24 @@
 				54700C9520FC12990048C029 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		54BCCD5E210E6E8B00CAD335 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		54BCCD61210E73DB00CAD335 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				54BCCD62210E73F400CAD335 /* UserJson.swift */,
+				54BCCD64210E73FE00CAD335 /* GroupJson.swift */,
+				54BCCD66210E74B800CAD335 /* GroupsJson.swift */,
+			);
+			path = Jsons;
 			sourceTree = "<group>";
 		};
 		93BD71F064B2D3F86442EB57 /* Pods */ = {
@@ -431,12 +459,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
+				54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
 				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
 				54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */,
+				54BCCD67210E74B800CAD335 /* GroupsJson.swift in Sources */,
 				54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
+				54BCCD60210E6EFA00CAD335 /* FetchGroupsService.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
+				54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,
 				54700C9620FC12990048C029 /* User.swift in Sources */,
 			);
