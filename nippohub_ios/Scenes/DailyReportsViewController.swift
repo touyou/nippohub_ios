@@ -16,7 +16,7 @@ class DailyReportsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         dailyReportIndexTable.register(UINib(nibName: "DailyReportIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "dailyReportItem")
-        self.dailyReports = [DailyReport(title: "test1", body: "", user: User(nickname: "t1", email: "")), DailyReport(title: "test2", body: "", user: User(nickname: "t2", email: "")), DailyReport(title: "test3", body: "", user: User(nickname: "t3", email: ""))]
+        self.dailyReports = FetchDailyReports.exec()
         
         dailyReportIndexTable.delegate = self
         dailyReportIndexTable.dataSource = self
