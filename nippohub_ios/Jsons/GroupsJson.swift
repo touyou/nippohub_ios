@@ -10,10 +10,4 @@ import Foundation
 
 struct GroupsJson: Codable {
     let groups: [GroupJson]
-    
-    func toDomainObject() -> [Group] {
-        return groups.map { (groupJson) in
-            groupJson.toDomainObject()
-        }
-    }
 }
