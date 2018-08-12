@@ -16,6 +16,7 @@ class FetchGroupsService {
         """.data(using: .utf8)!
         let decoder = JSONDecoder()
         let groupsJson = try? decoder.decode(GroupsJson.self, from: res)
+        
         if groupsJson != nil {
             return groupsJson!.groups.map { group in
                 group.toDomainObject()
