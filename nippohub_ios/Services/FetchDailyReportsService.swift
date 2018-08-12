@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FetchDailyReports {
+class FetchDailyReportsService {
     static func exec() -> [DailyReport] {
         // TODO: データ受け取り
         let res = """
