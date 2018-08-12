@@ -30,6 +30,8 @@
 		54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD62210E73F400CAD335 /* UserJson.swift */; };
 		54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD64210E73FE00CAD335 /* GroupJson.swift */; };
 		54BCCD67210E74B800CAD335 /* GroupsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD66210E74B800CAD335 /* GroupsJson.swift */; };
+		54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1BF2120E34300148AFD /* FetchGroupService.swift */; };
+		54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
 		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
@@ -83,6 +85,8 @@
 		54BCCD62210E73F400CAD335 /* UserJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJson.swift; sourceTree = "<group>"; };
 		54BCCD64210E73FE00CAD335 /* GroupJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupJson.swift; sourceTree = "<group>"; };
 		54BCCD66210E74B800CAD335 /* GroupsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsJson.swift; sourceTree = "<group>"; };
+		54E3A1BF2120E34300148AFD /* FetchGroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupService.swift; sourceTree = "<group>"; };
+		54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReportService.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +218,8 @@
 			children = (
 				54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */,
 				54B3B2F92117AB6500BA93AA /* FetchDailyReports.swift */,
+				54E3A1BF2120E34300148AFD /* FetchGroupService.swift */,
+				54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -477,7 +483,9 @@
 				54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
 				54BCCD60210E6EFA00CAD335 /* FetchGroupsService.swift in Sources */,
+				54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
+				54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */,
 				54B3B2FA2117AB6500BA93AA /* FetchDailyReports.swift in Sources */,
 				54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */,
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
