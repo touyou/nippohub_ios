@@ -16,7 +16,7 @@ class DailyReportsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         dailyReportIndexTable.register(UINib(nibName: "DailyReportIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "dailyReportItem")
-        self.dailyReports = FetchDailyReports.exec()
+        self.dailyReports = FetchDailyReportsService.exec()
         
         dailyReportIndexTable.delegate = self
         dailyReportIndexTable.dataSource = self

@@ -23,7 +23,7 @@
 		54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */; };
 		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
 		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
-		54B3B2FA2117AB6500BA93AA /* FetchDailyReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B2F92117AB6500BA93AA /* FetchDailyReports.swift */; };
+		54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B2F92117AB6500BA93AA /* FetchDailyReportsService.swift */; };
 		54B3B2FD2117ADE700BA93AA /* DailyReportJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B2FC2117ADE700BA93AA /* DailyReportJson.swift */; };
 		54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B2FE2117AE6B00BA93AA /* DailyReportsJson.swift */; };
 		54BCCD60210E6EFA00CAD335 /* FetchGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */; };
@@ -78,7 +78,7 @@
 		54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsViewController.swift; sourceTree = "<group>"; };
 		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		54B3B2F92117AB6500BA93AA /* FetchDailyReports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReports.swift; sourceTree = "<group>"; };
+		54B3B2F92117AB6500BA93AA /* FetchDailyReportsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReportsService.swift; sourceTree = "<group>"; };
 		54B3B2FC2117ADE700BA93AA /* DailyReportJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportJson.swift; sourceTree = "<group>"; };
 		54B3B2FE2117AE6B00BA93AA /* DailyReportsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsJson.swift; sourceTree = "<group>"; };
 		54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupsService.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				54BCCD5F210E6EFA00CAD335 /* FetchGroupsService.swift */,
-				54B3B2F92117AB6500BA93AA /* FetchDailyReports.swift */,
+				54B3B2F92117AB6500BA93AA /* FetchDailyReportsService.swift */,
 				54E3A1BF2120E34300148AFD /* FetchGroupService.swift */,
 				54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */,
 			);
@@ -486,7 +486,7 @@
 				54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
 				54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */,
-				54B3B2FA2117AB6500BA93AA /* FetchDailyReports.swift in Sources */,
+				54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */,
 				54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */,
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,
