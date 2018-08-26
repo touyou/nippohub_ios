@@ -130,7 +130,7 @@
                                     <navigationItem title="Title" id="zTv-pM-g1S">
                                         <barButtonItem key="rightBarButtonItem" title="作成" id="Swb-Xy-CBA">
                                             <connections>
-                                                <segue destination="2I0-GY-qaS" kind="show" id="njo-K2-f0l"/>
+                                                <segue destination="2I0-GY-qaS" kind="show" id="OwM-Uq-6Pa"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="2338" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Group View Controller-->
         <scene sceneID="9hx-Iz-Zy9">
             <objects>
-                <viewController id="2I0-GY-qaS" sceneMemberID="viewController">
+                <viewController id="2I0-GY-qaS" customClass="PostGroupViewController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UAl-eu-Us1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
                                 <rect key="frame" x="16" y="264" width="343" height="30"/>
                                 <state key="normal" title="作成"/>
                                 <connections>
-                                    <segue destination="NpT-mN-diR" kind="show" id="gNT-DN-nxu"/>
+                                    <action selector="postGroup" destination="2I0-GY-qaS" eventType="touchDown" id="3wi-K7-4BP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="571-FI-yqK">
@@ -285,6 +285,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkM-Hs-IwM"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionForm" destination="bEF-fR-Gwn" id="9EO-N1-N2R"/>
+                        <outlet property="nameForm" destination="mdR-T7-Vew" id="8LP-44-EJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yeq-cc-gfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,6 +362,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Fwj-32-xnf"/>
-        <segue reference="gNT-DN-nxu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class GroupsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
     @IBOutlet weak var groupIndexTableView: UITableView!
     var groups: [Group] = []
     private let disposeBag = DisposeBag()
