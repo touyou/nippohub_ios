@@ -21,6 +21,9 @@
 		54700C9820FC13A50048C029 /* DailyReportIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54700C9720FC13A50048C029 /* DailyReportIndexTableViewCell.xib */; };
 		54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9920FC16970048C029 /* DailyReportIndexTableViewCell.swift */; };
 		54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */; };
+		548F439A213C9CDF009B8783 /* PostDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F4399213C9CDF009B8783 /* PostDailyReportService.swift */; };
+		548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F439B213C9D97009B8783 /* PostDailyReportJson.swift */; };
+		548F439E213C9F81009B8783 /* PostDailyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F439D213C9F81009B8783 /* PostDailyReportViewController.swift */; };
 		54B13AF720E04B2C00083E6C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF620E04B2C00083E6C /* Group.swift */; };
 		54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B13AF820E053FC00083E6C /* GroupsViewController.swift */; };
 		54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B2F92117AB6500BA93AA /* FetchDailyReportsService.swift */; };
@@ -79,6 +82,9 @@
 		54700C9720FC13A50048C029 /* DailyReportIndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportIndexTableViewCell.xib; sourceTree = "<group>"; };
 		54700C9920FC16970048C029 /* DailyReportIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexTableViewCell.swift; sourceTree = "<group>"; };
 		54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsViewController.swift; sourceTree = "<group>"; };
+		548F4399213C9CDF009B8783 /* PostDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportService.swift; sourceTree = "<group>"; };
+		548F439B213C9D97009B8783 /* PostDailyReportJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportJson.swift; sourceTree = "<group>"; };
+		548F439D213C9F81009B8783 /* PostDailyReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportViewController.swift; sourceTree = "<group>"; };
 		54B13AF620E04B2C00083E6C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		54B13AF820E053FC00083E6C /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		54B3B2F92117AB6500BA93AA /* FetchDailyReportsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReportsService.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 				54B13AF820E053FC00083E6C /* GroupsViewController.swift */,
 				54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */,
 				54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */,
+				548F439D213C9F81009B8783 /* PostDailyReportViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 				54E3A1BF2120E34300148AFD /* FetchGroupService.swift */,
 				54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */,
 				54D88A9A213365C500F7E104 /* PostGroupService.swift */,
+				548F4399213C9CDF009B8783 /* PostDailyReportService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				54B3B2FC2117ADE700BA93AA /* DailyReportJson.swift */,
 				54B3B2FE2117AE6B00BA93AA /* DailyReportsJson.swift */,
 				54D88A9C2133667E00F7E104 /* PostGroupJson.swift */,
+				548F439B213C9D97009B8783 /* PostDailyReportJson.swift */,
 			);
 			path = Jsons;
 			sourceTree = "<group>";
@@ -483,6 +492,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
+				548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */,
+				548F439E213C9F81009B8783 /* PostDailyReportViewController.swift in Sources */,
 				54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
 				54D88A9D2133667E00F7E104 /* PostGroupJson.swift in Sources */,
@@ -503,6 +514,7 @@
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,
 				54700C9620FC12990048C029 /* User.swift in Sources */,
+				548F439A213C9CDF009B8783 /* PostDailyReportService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

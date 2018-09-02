@@ -294,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="857" y="815"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Daily Report View Controller-->
         <scene sceneID="o77-OD-BH2">
             <objects>
-                <viewController id="03L-0K-py0" sceneMemberID="viewController">
+                <viewController id="03L-0K-py0" customClass="PostDailyReportViewController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m6G-ZI-v1E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +324,7 @@
                                 <rect key="frame" x="16" y="264" width="343" height="30"/>
                                 <state key="normal" title="作成"/>
                                 <connections>
-                                    <segue destination="zOy-6Q-7JB" kind="show" id="xED-bC-Y71"/>
+                                    <action selector="postDailyReport" destination="03L-0K-py0" eventType="touchDown" id="vZs-N1-zHN"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-fb-NGG">
@@ -354,13 +354,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="br2-JL-gMj"/>
                     </view>
+                    <connections>
+                        <outlet property="bodyForm" destination="9N9-fb-NGG" id="1cw-qi-M7V"/>
+                        <outlet property="titleForm" destination="0TH-8z-uT9" id="rkT-mV-uuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XK-FD-dfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584.8" y="814.54272863568224"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Fwj-32-xnf"/>
-    </inferredMetricsTieBreakers>
 </document>
