@@ -11,8 +11,4 @@ import Foundation
 struct PostDailyReportJson: Codable {
     let title: String
     let body: String
-
-    static func fromDomainObject(dailyReport: DailyReport) -> PostDailyReportJson {
-        return PostDailyReportJson(title: dailyReport.title, body: dailyReport.body)
-    }
 }
