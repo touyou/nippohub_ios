@@ -9,10 +9,9 @@
 import Foundation
 
 class PostGroupService {
-    static func exec(group: Group) {
-        let groupJson = PostGroupJson.fromDomainObject(group: group)
+    static func exec(group: PostGroupJson) {
         let encoder = JSONEncoder()
-        let req = try? encoder.encode(groupJson)
+        let req = try? encoder.encode(group)
         
         // TODO: HTTPリクエスト送るようにする
         print(req?.base64EncodedString())

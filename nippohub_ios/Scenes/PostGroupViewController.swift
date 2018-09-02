@@ -13,7 +13,7 @@ class PostGroupViewController: UIViewController {
     @IBOutlet weak var descriptionForm: UITextField!
     
     @IBAction func postGroup() {
-        let group = Group(name: nameForm.text!, description: descriptionForm.text!)
+        let group = PostGroupJson(name: nameForm.text!, description: descriptionForm.text!)
         
         PostGroupService.exec(group: group)
     }

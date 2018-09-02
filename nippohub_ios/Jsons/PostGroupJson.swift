@@ -13,8 +13,4 @@ import Foundation
 struct PostGroupJson: Codable {
     let name: String
     let description: String
-    
-    static func fromDomainObject(group: Group) -> PostGroupJson {
-        return PostGroupJson(name: group.name, description: group.description)
-    }
 }
