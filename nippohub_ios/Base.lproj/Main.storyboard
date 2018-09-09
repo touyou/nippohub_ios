@@ -70,7 +70,7 @@
                                 <rect key="frame" x="16" y="416" width="343" height="30"/>
                                 <state key="normal" title="登録"/>
                                 <connections>
-                                    <segue destination="NpT-mN-diR" kind="show" id="7th-9A-zTv"/>
+                                    <action selector="createUser" destination="BYZ-38-t0r" eventType="touchDown" id="NtN-mj-wpS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,6 +106,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailForm" destination="8lH-L8-Jui" id="3L5-im-njH"/>
+                        <outlet property="nicknameForm" destination="43o-EC-O70" id="4wC-cc-vW8"/>
+                        <outlet property="passwordConfirmationForm" destination="Jkz-Vr-8u6" id="rWd-qg-qwK"/>
+                        <outlet property="passwordFrom" destination="9uO-Yd-G2V" id="puK-n0-2FW"/>
+                        <segue destination="NpT-mN-diR" kind="show" identifier="showGroupsSegue" id="W8V-ry-8hf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var nicknameForm: UITextField!
+    @IBOutlet var emailForm: UITextField!
+    @IBOutlet var passwordFrom: UITextField!
+    @IBOutlet var passwordConfirmationForm: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction
+    func createUser() {
+        let user = PostUserJson(nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
+        
+        PostUserService.exec(user: user)
+        
+        performSegue(withIdentifier: "showGroupsSegue", sender: nil)
+    }
 }
 
