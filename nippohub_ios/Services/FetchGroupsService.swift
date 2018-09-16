@@ -10,7 +10,18 @@ import Foundation
 
 class FetchGroupsService {
     static func exec() -> [Group] {
-        // TODO: サーバからのデータ受け取り
+/*
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups")!
+
+        client.get(url: url, completionHandler: { data, res, error in
+            if error != nil {
+                // TODO: エラーハンドリング
+                return
+            }
+         
+            print(data?.base64EncodedString())
+        })*/
         let res = """
             {"groups": [{"id": 1, "name": "group1", "users": [{"id": 1, "nickname": "user1"}, {"id": 2, "nickname": "user2"}]}, {"id": 2, "name": "group2", "users": [{"id": 3, "nickname": "user3"}, {"id": 4, "nickname": "user4"}]}, {"id": 3, "name": "group3", "users": [{"id": 5, "nickname": "user5"}, {"id": 6, "nickname": "user6"}]}]}
         """.data(using: .utf8)!
