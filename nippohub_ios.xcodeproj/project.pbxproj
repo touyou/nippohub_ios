@@ -40,6 +40,7 @@
 		54D88A9F21336A5800F7E104 /* PostGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */; };
 		54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1BF2120E34300148AFD /* FetchGroupService.swift */; };
 		54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */; };
+		54F61EE0214F032400FD92C2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F61EDF214F032400FD92C2 /* APIClient.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
 		F3D428C8F2D03A020ABF580D /* Pods_nippohub_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C14CC25DE9645E3505FED /* Pods_nippohub_iosUITests.framework */; };
@@ -103,6 +104,7 @@
 		54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupViewController.swift; sourceTree = "<group>"; };
 		54E3A1BF2120E34300148AFD /* FetchGroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupService.swift; sourceTree = "<group>"; };
 		54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReportService.swift; sourceTree = "<group>"; };
+		54F61EDF214F032400FD92C2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		74044B35876B88966367E87F /* Pods_nippohub_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 		546EE38820D7189B00B6D46C /* nippohub_ios */ = {
 			isa = PBXGroup;
 			children = (
+				54F61EDE214F02EE00FD92C2 /* Modules */,
 				54BCCD61210E73DB00CAD335 /* Jsons */,
 				54BCCD5E210E6E8B00CAD335 /* Services */,
 				46AC596F20E0809D00F3C62D /* Scenes */,
@@ -258,6 +261,14 @@
 				543C88582145E2CB0097D693 /* PostUserJson.swift */,
 			);
 			path = Jsons;
+			sourceTree = "<group>";
+		};
+		54F61EDE214F02EE00FD92C2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				54F61EDF214F032400FD92C2 /* APIClient.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		93BD71F064B2D3F86442EB57 /* Pods */ = {
@@ -522,6 +533,7 @@
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,
 				54700C9620FC12990048C029 /* User.swift in Sources */,
+				54F61EE0214F032400FD92C2 /* APIClient.swift in Sources */,
 				548F439A213C9CDF009B8783 /* PostDailyReportService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
