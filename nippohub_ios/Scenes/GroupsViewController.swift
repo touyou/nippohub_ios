@@ -19,13 +19,18 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         groupIndexTableView.register(UINib(nibName: "GroupIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "groupItem")
-        self.groups = FetchGroupsService.exec()
+        FetchGroupsService.exec(callbackFunc: { groups in
+            self.groups = groups
+            
+            DispatchQueue.main.sync {
+                self.groupIndexTableView.reloadData()
+            }
+        })
         
         groupIndexTableView.delegate = self
         groupIndexTableView.dataSource = self
         groupIndexTableView.reloadData()
     }
-    
     // TODO: publicいらない
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groups.count

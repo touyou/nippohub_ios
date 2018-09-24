@@ -11,7 +11,7 @@ import Foundation
 struct GroupJson: Codable {
     let id: Int
     let name: String
-    let users: [UserJson]
+    let users: [UserJson]?
     
     func toDomainObject() -> Group {
         return Group(name: name, description: "")
