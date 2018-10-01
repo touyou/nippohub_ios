@@ -9,20 +9,26 @@
 import Foundation
 
 class FetchDailyReportsService {
-    static func exec() -> [DailyReport] {
-        // TODO: データ受け取り
-        let res = """
-            {"daily_reports": [{"id": 1, "title": "test1", "body": "body1", "user": {"id": 1, "nickname": "user1"}}, {"id": 2, "title": "test2", "body": "body2", "user": {"id": 2, "nickname": "user2"}}, {"id": 3, "title": "test3", "body": "body3", "user": {"id": 3, "nickname": "user3"}}]}
-        """.data(using: .utf8)! 
-        let decoder = JSONDecoder()
-        let dailyReportsJson = try? decoder.decode(DailyReportsJson.self, from: res)
+    static func exec(callbackFunc: @escaping ([DailyReport]) -> Void) {
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/1/daily_reports")!
         
-        if dailyReportsJson != nil {
-            return dailyReportsJson!.dailyReports.map { dailyReport in
-                dailyReport.toDomainObject()
+        client.get(url: url, completionHandler: { data, res, error in
+            if error != nil {
+                // TODO: エラーハンドリング
+                return;
             }
-        } else {
-            return []
-        }
+            
+            let decoder = JSONDecoder()
+            let dailyReportsJson = try? decoder.decode(DailyReportsJson.self, from: data!)
+            
+            if dailyReportsJson != nil {
+                callbackFunc(dailyReportsJson!.dailyReports.map { dailyReport in
+                    dailyReport.toDomainObject()
+                })
+            } else {
+                callbackFunc([])
+            }
+        })
     }
 }
