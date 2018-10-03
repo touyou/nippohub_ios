@@ -9,17 +9,22 @@
 import Foundation
 
 class FetchGroupService {
-    static func exec() -> Group {
-        let res = """
-            {"id": 1, "name": "group1", "description": "a description.", "users": [{"id": 1, "nickname": "user1"}, {"id": 2, "nickname": "user2"}]}
-        """.data(using: .utf8)!
-        let decorder = JSONDecoder()
-        let groupJson = try? decorder.decode(GroupJson.self, from: res)
+    static func exec(callbackFunc: @escaping (Group) -> Void) {
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/1")!
         
-        if groupJson != nil {
-            return groupJson!.toDomainObject()
-        } else {
-            return Group(name: "", description: "")
-        }
+        client.get(url: url, completionHandler: { data, res, error in
+            if error != nil {
+                // TODO: エラーハンドリング
+                return
+            }
+            
+            let decorder = JSONDecoder()
+            let group = try? decorder.decode(GroupJson.self, from: data!)
+            
+            if group != nil {
+                callbackFunc(group!.toDomainObject())
+            }
+        })
     }
 }
