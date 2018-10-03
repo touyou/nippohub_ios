@@ -16,7 +16,7 @@ class FetchDailyReportsService {
         client.get(url: url, completionHandler: { data, res, error in
             if error != nil {
                 // TODO: エラーハンドリング
-                return;
+                return
             }
             
             let decoder = JSONDecoder()

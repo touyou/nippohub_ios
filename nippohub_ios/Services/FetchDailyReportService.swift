@@ -9,18 +9,22 @@
 import Foundation
 
 class FetchDailyReportService {
-    static func exec() -> DailyReport {
-        // TODO: データ受け取り
-        let res = """
-            {"id": 1, "title": "test1", "body": "body1", "user": {"id": 1, "nickname": "user1"}}
-        """.data(using: .utf8)!
-        let decoder = JSONDecoder()
-        let dailyReportJson = try? decoder.decode(DailyReportJson.self, from: res)
+    static func exec(callbackFunc: @escaping (DailyReport) -> Void) {
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/1")!
         
-        if dailyReportJson != nil {
-            return dailyReportJson!.toDomainObject()
-        } else {
-            return DailyReport(title: "", body: "", user: User(nickname: "", email: nil))
-        }
+        client.get(url: url, completionHandler: { data, res, error in
+            if error != nil {
+                // TODO: エラーハンドリング
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            let dailyReport = try? decoder.decode(DailyReportJson.self, from: data!)
+            
+            if dailyReport != nil {
+                callbackFunc(dailyReport!.toDomainObject())
+            }
+        })
     }
 }
