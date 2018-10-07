@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         PostUserService.exec(user: user)
         
-        performSegue(withIdentifier: "showGroupsSegue", sender: nil)
+        //performSegue(withIdentifier: "showGroupsSegue", sender: nil)
     }
 }
 
