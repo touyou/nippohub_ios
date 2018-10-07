@@ -21,4 +21,16 @@ class APIClient {
 
         session.dataTask(with: request, completionHandler: completionHandler).resume()
     }
+    
+    func post(url: URL, body: Data, completationHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        // 検証用にしばらく。セッション保持するまで
+        request.addValue("xxx", forHTTPHeaderField: "Authorization")
+        request.httpBody = body
+        
+        session.dataTask(with: request, completionHandler: completationHandler).resume()
+    }
 }
