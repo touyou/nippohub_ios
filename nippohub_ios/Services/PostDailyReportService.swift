@@ -9,10 +9,16 @@
 import Foundation
 
 class PostDailyReportService {
-    static func exec(dailyReport: PostDailyReportJson) {
+    static func exec(groupId: Int, dailyReport: PostDailyReportJson) {
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/\(groupId)/daily_reports")
         let encorder = JSONEncoder()
         let req = try? encorder.encode(dailyReport)
         
-        print(req?.base64EncodedString())
+        client.post(url: url!, body: req!, completationHandler: { data, res, error in
+            print("---------------------")
+            print(res!)
+            print("---------------------")
+        })
     }
 }

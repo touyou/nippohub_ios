@@ -10,10 +10,15 @@ import Foundation
 
 class PostGroupService {
     static func exec(group: PostGroupJson) {
+        let client = APIClient()
+        let url = URL(string: "http://nippohub.com:3000/v1/groups")
         let encoder = JSONEncoder()
         let req = try? encoder.encode(group)
         
-        // TODO: HTTPリクエスト送るようにする
-        print(req?.base64EncodedString())
+        client.post(url: url!, body: req!, completationHandler: { data, res, error in
+            print("---------------------")
+            print(res!)
+            print("---------------------")
+        })
     }
 }

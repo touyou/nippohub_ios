@@ -9,9 +9,9 @@
 import Foundation
 
 class FetchDailyReportService {
-    static func exec(callbackFunc: @escaping (DailyReport) -> Void) {
+    static func exec(groupId: Int, dailyReportId: Int, callbackFunc: @escaping (DailyReport) -> Void) {
         let client = APIClient()
-        let url = URL(string: "http://nippohub.com:3000/v1/groups/1")!
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/\(groupId)/daily_reports/\(dailyReportId)")!
         
         client.get(url: url, completionHandler: { data, res, error in
             if error != nil {
