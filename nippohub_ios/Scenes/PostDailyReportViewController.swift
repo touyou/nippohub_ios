@@ -26,6 +26,6 @@ class PostDailyReportViewController: UIViewController {
     func postDailyReport() {
         let dailyReport = PostDailyReportJson(title: titleForm.text!, body: bodyForm.text!)
         
-        PostDailyReportService.exec(dailyReport: dailyReport)
+        PostDailyReportService.exec(groupId: 1, dailyReport: dailyReport)
     }
 }

@@ -16,7 +16,7 @@ class DailyReportsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         dailyReportIndexTable.register(UINib(nibName: "DailyReportIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "dailyReportItem")
-        FetchDailyReportsService.exec(callbackFunc: { dailyReports in
+        FetchDailyReportsService.exec(groupId: 1, callbackFunc: { dailyReports in
             self.dailyReports = dailyReports
             
             DispatchQueue.main.sync {

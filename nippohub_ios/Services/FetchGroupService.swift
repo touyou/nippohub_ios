@@ -9,9 +9,9 @@
 import Foundation
 
 class FetchGroupService {
-    static func exec(callbackFunc: @escaping (Group) -> Void) {
+    static func exec(groupId: Int, callbackFunc: @escaping (Group) -> Void) {
         let client = APIClient()
-        let url = URL(string: "http://nippohub.com:3000/v1/groups/1")!
+        let url = URL(string: "http://nippohub.com:3000/v1/groups/\(groupId)")!
         
         client.get(url: url, completionHandler: { data, res, error in
             if error != nil {
