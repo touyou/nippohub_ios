@@ -29,7 +29,11 @@ class ViewController: UIViewController {
         let user = PostUserJson(nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
         PostUserService.exec(user: user, callbackFunc: { userJson in
-            print(userJson.token)
+            let storage = UserDefaults.standard
+            let token = userJson.token
+            
+            storage.set(token, forKey: "token")
+            storage.synchronize()
             
             DispatchQueue.main.sync {
                 self.performSegue(withIdentifier: "showGroupsSegue", sender: nil)
