@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     func createUser() {
         let user = PostUserJson(nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
-        PostUserService.exec(user: user)
+        PostUserService.exec(user: user, callbackFunc: { userJson in
+            print(userJson.token)
+        })
         
         //performSegue(withIdentifier: "showGroupsSegue", sender: nil)
     }
