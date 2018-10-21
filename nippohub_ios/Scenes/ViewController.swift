@@ -30,9 +30,11 @@ class ViewController: UIViewController {
         
         PostUserService.exec(user: user, callbackFunc: { userJson in
             print(userJson.token)
+            
+            DispatchQueue.main.sync {
+                self.performSegue(withIdentifier: "showGroupsSegue", sender: nil)
+            }
         })
-        
-        //performSegue(withIdentifier: "showGroupsSegue", sender: nil)
     }
 }
 
