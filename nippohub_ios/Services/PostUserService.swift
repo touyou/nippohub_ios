@@ -9,20 +9,21 @@
 import Foundation
 
 class PostUserService {
-    static func exec(user: PostUserJson) {
+    static func exec(user: PostUserJson, callbackFunc: @escaping (UserAuthorizationJson) -> Void) {
         let client = APIClient()
         let url = URL(string: "http://nippohub.com:3000/v1/account")
         let encoder = JSONEncoder()
         let req = try? encoder.encode(user)
 
         client.post(url: url!, body: req!, completationHandler: { data, res, error in
-            print("---------------------")
-            print(res!)
-            print("---------------------")
+            if error != nil {
+                // TODO: エラーハンドリング
+                return
+            }
+            let decorder = JSONDecoder()
+            let accountJson = try? decorder.decode(UserAuthorizationJson.self, from: data!)
             
-            print("---------------------")
-            print(data?.base64EncodedString())
-            print("---------------------")
+            callbackFunc(accountJson!)
         })
         
         

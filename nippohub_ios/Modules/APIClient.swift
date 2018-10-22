@@ -9,26 +9,28 @@
 import Foundation
 
 class APIClient {
-    let session = URLSession.shared
-    
     func get(url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        let session = URLSession.shared
+        let storage = UserDefaults.standard
+        let token = storage.object(forKey: "token") as? String
         var request = URLRequest(url: url)
         
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        // 検証用にしばらく。セッション保持するまで
-        request.addValue("xxx", forHTTPHeaderField: "Authorization")
+        request.addValue(token != nil ? token! : "", forHTTPHeaderField: "Authorization")
 
         session.dataTask(with: request, completionHandler: completionHandler).resume()
     }
     
     func post(url: URL, body: Data, completationHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        let session = URLSession.shared
+        let storage = UserDefaults.standard
+        let token = storage.object(forKey: "token") as? String
         var request = URLRequest(url: url)
         
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        // 検証用にしばらく。セッション保持するまで
-        request.addValue("xxx", forHTTPHeaderField: "Authorization")
+        request.addValue(token != nil ? token! : "", forHTTPHeaderField: "Authorization")
         request.httpBody = body
         
         session.dataTask(with: request, completionHandler: completationHandler).resume()
