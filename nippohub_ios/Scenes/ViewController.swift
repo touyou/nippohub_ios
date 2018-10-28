@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if AuthenticationToken.get() != nil && AuthenticationToken.get() != "" {
+            performSegue(withIdentifier: "showGroupsSegue", sender: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
