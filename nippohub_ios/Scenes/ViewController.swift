@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if AuthenticationToken.get() != nil && AuthenticationToken.get() != "" {
+            performSegue(withIdentifier: "showGroupsSegue", sender: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,11 +35,9 @@ class ViewController: UIViewController {
         let user = PostUserJson(nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
         PostUserService.exec(user: user, callbackFunc: { userJson in
-            let storage = UserDefaults.standard
             let token = userJson.token
             
-            storage.set(token, forKey: "token")
-            storage.synchronize()
+            AuthenticationToken.set(token)
             
             DispatchQueue.main.sync {
                 self.performSegue(withIdentifier: "showGroupsSegue", sender: nil)

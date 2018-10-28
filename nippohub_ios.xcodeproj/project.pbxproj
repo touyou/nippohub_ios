@@ -41,6 +41,7 @@
 		54D88A9F21336A5800F7E104 /* PostGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */; };
 		54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1BF2120E34300148AFD /* FetchGroupService.swift */; };
 		54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */; };
+		54EA3E9E21866D9A00C574A6 /* AuthenticationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EA3E9D21866D9A00C574A6 /* AuthenticationToken.swift */; };
 		54F61EE0214F032400FD92C2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F61EDF214F032400FD92C2 /* APIClient.swift */; };
 		83ACC41E06C182008AB6E771 /* Pods_nippohub_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74044B35876B88966367E87F /* Pods_nippohub_ios.framework */; };
 		C974360B3EB040558DE2B21B /* Pods_nippohub_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */; };
@@ -106,6 +107,7 @@
 		54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupViewController.swift; sourceTree = "<group>"; };
 		54E3A1BF2120E34300148AFD /* FetchGroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupService.swift; sourceTree = "<group>"; };
 		54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDailyReportService.swift; sourceTree = "<group>"; };
+		54EA3E9D21866D9A00C574A6 /* AuthenticationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationToken.swift; sourceTree = "<group>"; };
 		54F61EDF214F032400FD92C2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		6CAAD307751638335E839129 /* Pods_nippohub_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310F299D2FBDDF2E7445A40 /* Pods-nippohub_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub_iosTests/Pods-nippohub_iosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				54F61EDF214F032400FD92C2 /* APIClient.swift */,
+				54EA3E9D21866D9A00C574A6 /* AuthenticationToken.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				54011FB2217D352600466107 /* UserAuthorizationJson.swift in Sources */,
 				54BCCD67210E74B800CAD335 /* GroupsJson.swift in Sources */,
 				54B3B2FD2117ADE700BA93AA /* DailyReportJson.swift in Sources */,
+				54EA3E9E21866D9A00C574A6 /* AuthenticationToken.swift in Sources */,
 				54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
 				543C88572145E28B0097D693 /* PostUserService.swift in Sources */,

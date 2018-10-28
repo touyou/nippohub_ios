@@ -9,16 +9,19 @@
 import Foundation
 
 class PostGroupService {
-    static func exec(group: PostGroupJson) {
+    static func exec(group: PostGroupJson, callbackFunc: @escaping () -> Void) {
         let client = APIClient()
         let url = URL(string: "http://nippohub.com:3000/v1/groups")
         let encoder = JSONEncoder()
         let req = try? encoder.encode(group)
         
         client.post(url: url!, body: req!, completationHandler: { data, res, error in
-            print("---------------------")
-            print(res!)
-            print("---------------------")
+            if error != nil {
+                // TODO: エラーハンドリング
+                return
+            }
+            
+            callbackFunc()
         })
     }
 }

@@ -15,6 +15,8 @@ class PostGroupViewController: UIViewController {
     @IBAction func postGroup() {
         let group = PostGroupJson(name: nameForm.text!, description: descriptionForm.text!)
         
-        PostGroupService.exec(group: group)
+        PostGroupService.exec(group: group) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
