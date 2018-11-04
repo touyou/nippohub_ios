@@ -312,38 +312,45 @@
             </objects>
             <point key="canvasLocation" x="710" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Group User Relation Controller-->
         <scene sceneID="bUR-9m-D4b">
             <objects>
-                <viewController id="Xt8-XK-beR" sceneMemberID="viewController">
+                <viewController id="Xt8-XK-beR" customClass="PostGroupUserRelationController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aA-yI-GqE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plM-tI-TgN">
-                                <rect key="frame" x="16" y="106" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plM-tI-TgN">
+                                <rect key="frame" x="16" y="103" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-RS-grS">
-                                <rect key="frame" x="16" y="77" width="15" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-RS-grS">
+                                <rect key="frame" x="16" y="77" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkI-UN-t89">
-                                <rect key="frame" x="16" y="262" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkI-UN-t89">
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
                                 <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="postGroupUserRelation" destination="Xt8-XK-beR" eventType="touchDown" id="URy-wt-0Oy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fkI-UN-t89" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="C9S-rq-oMC"/>
+                            <constraint firstItem="fkI-UN-t89" firstAttribute="top" secondItem="plM-tI-TgN" secondAttribute="bottom" constant="126" id="FHt-DM-wLf"/>
                             <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="plM-tI-TgN" secondAttribute="trailing" constant="16" id="PIo-fJ-qHV"/>
                             <constraint firstItem="plM-tI-TgN" firstAttribute="top" secondItem="F00-RS-grS" secondAttribute="bottom" constant="5" id="Rmq-4W-IpW"/>
                             <constraint firstItem="plM-tI-TgN" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="XPN-5v-9na"/>
                             <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="fkI-UN-t89" secondAttribute="trailing" constant="16" id="XpI-lg-xa1"/>
+                            <constraint firstItem="F00-RS-grS" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="dpi-E7-e1u"/>
+                            <constraint firstItem="F00-RS-grS" firstAttribute="top" secondItem="sqe-gi-gO1" secondAttribute="top" constant="57" id="tyi-eG-N0B"/>
+                            <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="F00-RS-grS" secondAttribute="trailing" constant="16" id="vUu-h9-26a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sqe-gi-gO1"/>
                     </view>
