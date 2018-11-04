@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="-145" y="116"/>
         </scene>
         <!--Groups View Controller-->
         <scene sceneID="DBl-13-lGb">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODa-pg-hp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="118"/>
+            <point key="canvasLocation" x="711" y="116"/>
         </scene>
         <!--Daily Reports View Controller-->
         <scene sceneID="i9E-Eq-WTz">
@@ -180,11 +180,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="KRQ-Cf-RmT">
-                                        <barButtonItem key="rightBarButtonItem" title="作成" id="faK-ms-0fh">
-                                            <connections>
-                                                <segue destination="03L-0K-py0" kind="show" id="cdH-kv-xZA"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="作成" id="faK-ms-0fh">
+                                                <connections>
+                                                    <segue destination="03L-0K-py0" kind="show" id="cdH-kv-xZA"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="ユーザ追加" id="Ip0-qa-xXs">
+                                                <connections>
+                                                    <segue destination="Xt8-XK-beR" kind="show" id="wy3-fT-bu8"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -199,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-w8-zyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="117.39130434782609"/>
+            <point key="canvasLocation" x="1530" y="116"/>
         </scene>
         <!--Daily Report View Controller-->
         <scene sceneID="sXK-Os-dEB">
@@ -303,7 +310,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yeq-cc-gfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="815"/>
+            <point key="canvasLocation" x="710" y="887"/>
+        </scene>
+        <!--Post Group User Relation Controller-->
+        <scene sceneID="bUR-9m-D4b">
+            <objects>
+                <viewController id="Xt8-XK-beR" customClass="PostGroupUserRelationController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4aA-yI-GqE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plM-tI-TgN">
+                                <rect key="frame" x="16" y="103" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-RS-grS">
+                                <rect key="frame" x="16" y="77" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkI-UN-t89">
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="postGroupUserRelation" destination="Xt8-XK-beR" eventType="touchDown" id="URy-wt-0Oy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fkI-UN-t89" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="C9S-rq-oMC"/>
+                            <constraint firstItem="fkI-UN-t89" firstAttribute="top" secondItem="plM-tI-TgN" secondAttribute="bottom" constant="126" id="FHt-DM-wLf"/>
+                            <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="plM-tI-TgN" secondAttribute="trailing" constant="16" id="PIo-fJ-qHV"/>
+                            <constraint firstItem="plM-tI-TgN" firstAttribute="top" secondItem="F00-RS-grS" secondAttribute="bottom" constant="5" id="Rmq-4W-IpW"/>
+                            <constraint firstItem="plM-tI-TgN" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="XPN-5v-9na"/>
+                            <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="fkI-UN-t89" secondAttribute="trailing" constant="16" id="XpI-lg-xa1"/>
+                            <constraint firstItem="F00-RS-grS" firstAttribute="leading" secondItem="sqe-gi-gO1" secondAttribute="leading" constant="16" id="dpi-E7-e1u"/>
+                            <constraint firstItem="F00-RS-grS" firstAttribute="top" secondItem="sqe-gi-gO1" secondAttribute="top" constant="57" id="tyi-eG-N0B"/>
+                            <constraint firstItem="sqe-gi-gO1" firstAttribute="trailing" secondItem="F00-RS-grS" secondAttribute="trailing" constant="16" id="vUu-h9-26a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sqe-gi-gO1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppZ-GA-FKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="887"/>
         </scene>
         <!--Post Daily Report View Controller-->
         <scene sceneID="o77-OD-BH2">
@@ -372,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XK-FD-dfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="814.54272863568224"/>
+            <point key="canvasLocation" x="2337" y="887"/>
         </scene>
     </scenes>
 </document>
