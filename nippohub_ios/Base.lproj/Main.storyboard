@@ -354,6 +354,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sqe-gi-gO1"/>
                     </view>
+                    <connections>
+                        <outlet property="userIdForm" destination="plM-tI-TgN" id="HnX-tN-nVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppZ-GA-FKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

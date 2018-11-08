@@ -9,6 +9,8 @@
 import UIKit
 
 class PostGroupUserRelationController: UIViewController {
+    @IBOutlet var userIdForm: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +23,13 @@ class PostGroupUserRelationController: UIViewController {
     
     @IBAction
     func postGroupUserRelation() {
-        dismiss(animated: true, completion: nil)
+        guard let userId = Int(userIdForm.text!) else { return }
+        let groupUserRelation = PostGroupUserRelationJson(userId: userId, role: "general")
+        
+        PostGroupUserRelationService.exec(groupId: 1, groupUserRelation: groupUserRelation) {
+            DispatchQueue.main.sync {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
 }
