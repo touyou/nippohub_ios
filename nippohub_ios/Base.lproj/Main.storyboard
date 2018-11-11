@@ -159,6 +159,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zus-QG-45u"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="cs0-6S-iLK" id="lsw-rP-6yG"/>
+                        <outlet property="idLabel" destination="XHU-Tq-5vb" id="BUx-DN-NWT"/>
+                        <outlet property="nicknameLabel" destination="Nz5-kQ-iE9" id="sD8-bh-Age"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0B-gT-yiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
