@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-145" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="HCY-Jh-KXI">
             <objects>
-                <viewController id="Q0P-sS-Sg9" sceneMemberID="viewController">
+                <viewController id="Q0P-sS-Sg9" customClass="AccountViewController" customModule="nippohub_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tsl-n2-Abj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

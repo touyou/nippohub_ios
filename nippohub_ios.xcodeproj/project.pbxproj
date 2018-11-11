@@ -12,6 +12,7 @@
 		54011FB2217D352600466107 /* UserAuthorizationJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54011FB1217D352600466107 /* UserAuthorizationJson.swift */; };
 		540CDD3C2194F363007D9A1F /* PostGroupUserRelationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CDD3B2194F363007D9A1F /* PostGroupUserRelationService.swift */; };
 		540CDD3E2194F3E3007D9A1F /* PostGroupUserRelationJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CDD3D2194F3E3007D9A1F /* PostGroupUserRelationJson.swift */; };
+		541F82022198E50500B0024A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F82012198E50500B0024A /* AccountViewController.swift */; };
 		5434CE6F218FA810000BF896 /* DailyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434CE6E218FA810000BF896 /* DailyReportViewController.swift */; };
 		5434CE71218FAD91000BF896 /* PostGroupUserRelationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */; };
 		543C88572145E28B0097D693 /* PostUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88562145E28B0097D693 /* PostUserService.swift */; };
@@ -76,6 +77,7 @@
 		54011FB1217D352600466107 /* UserAuthorizationJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationJson.swift; sourceTree = "<group>"; };
 		540CDD3B2194F363007D9A1F /* PostGroupUserRelationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupUserRelationService.swift; sourceTree = "<group>"; };
 		540CDD3D2194F3E3007D9A1F /* PostGroupUserRelationJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupUserRelationJson.swift; sourceTree = "<group>"; };
+		541F82012198E50500B0024A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		5434CE6E218FA810000BF896 /* DailyReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportViewController.swift; sourceTree = "<group>"; };
 		5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupUserRelationController.swift; sourceTree = "<group>"; };
 		543C88562145E28B0097D693 /* PostUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserService.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				548F439D213C9F81009B8783 /* PostDailyReportViewController.swift */,
 				5434CE6E218FA810000BF896 /* DailyReportViewController.swift */,
 				5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */,
+				541F82012198E50500B0024A /* AccountViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				54D88A9D2133667E00F7E104 /* PostGroupJson.swift in Sources */,
 				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
 				54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */,
+				541F82022198E50500B0024A /* AccountViewController.swift in Sources */,
 				5434CE6F218FA810000BF896 /* DailyReportViewController.swift in Sources */,
 				54011FB2217D352600466107 /* UserAuthorizationJson.swift in Sources */,
 				54BCCD67210E74B800CAD335 /* GroupsJson.swift in Sources */,
