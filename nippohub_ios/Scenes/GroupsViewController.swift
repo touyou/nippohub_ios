@@ -50,4 +50,13 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "indexDailyReportSegue", sender: nil)
     }
+    
+    @IBAction
+    func sign_out() {
+        let screen = storyboard?.instantiateViewController(withIdentifier: "signOutPoint")
+        
+        AuthenticationToken.clear()
+        
+        present(screen!, animated: true, completion: nil)
+    }
 }
