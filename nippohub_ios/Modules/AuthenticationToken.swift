@@ -12,6 +12,7 @@ class AuthenticationToken {
     private static let manager = AuthenticationToken()
     static let get = AuthenticationToken.manager.get
     static let set = AuthenticationToken.manager.set
+    static let clear = AuthenticationToken.manager.clear
     private let userDefault = UserDefaults.standard
     private var token: String?
     
@@ -26,6 +27,12 @@ class AuthenticationToken {
     func set(token: String) {
         self.token = token
         userDefault.set(token, forKey: "token")
+        userDefault.synchronize()
+    }
+    
+    func clear() {
+        self.token = nil
+        userDefault.set(nil, forKey: "token")
         userDefault.synchronize()
     }
 }
