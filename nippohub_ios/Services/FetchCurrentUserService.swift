@@ -13,8 +13,6 @@ class FetchCurrentUserService {
         let client = APIClient()
         let url = URL(string: "http://nippohub.com:3000/v1/account")
         
-        
-        
         client.get(url: url!) { data, res, error in
             if error != nil {
                 // TODO: エラーハンドリング

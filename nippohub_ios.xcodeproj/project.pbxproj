@@ -18,6 +18,9 @@
 		541F82072198E78D00B0024A /* FetchCurrentUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F82032198E5C300B0024A /* FetchCurrentUserService.swift */; };
 		5434CE6F218FA810000BF896 /* DailyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434CE6E218FA810000BF896 /* DailyReportViewController.swift */; };
 		5434CE71218FAD91000BF896 /* PostGroupUserRelationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */; };
+		543C295E21B0A24600837C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C295D21B0A24600837C0E /* SignInViewController.swift */; };
+		543C296021B0A31200837C0E /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C295F21B0A31200837C0E /* SignInService.swift */; };
+		543C296221B0A41200837C0E /* SignInJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C296121B0A41200837C0E /* SignInJson.swift */; };
 		543C88572145E28B0097D693 /* PostUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88562145E28B0097D693 /* PostUserService.swift */; };
 		543C88592145E2CB0097D693 /* PostUserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88582145E2CB0097D693 /* PostUserJson.swift */; };
 		546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38920D7189B00B6D46C /* AppDelegate.swift */; };
@@ -85,6 +88,9 @@
 		541F82052198E64A00B0024A /* AccountJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountJson.swift; sourceTree = "<group>"; };
 		5434CE6E218FA810000BF896 /* DailyReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportViewController.swift; sourceTree = "<group>"; };
 		5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupUserRelationController.swift; sourceTree = "<group>"; };
+		543C295D21B0A24600837C0E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		543C295F21B0A31200837C0E /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		543C296121B0A41200837C0E /* SignInJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInJson.swift; sourceTree = "<group>"; };
 		543C88562145E28B0097D693 /* PostUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserService.swift; sourceTree = "<group>"; };
 		543C88582145E2CB0097D693 /* PostUserJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserJson.swift; sourceTree = "<group>"; };
 		546EE38620D7189B00B6D46C /* nippohub_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nippohub_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +190,7 @@
 				5434CE6E218FA810000BF896 /* DailyReportViewController.swift */,
 				5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */,
 				541F82012198E50500B0024A /* AccountViewController.swift */,
+				543C295D21B0A24600837C0E /* SignInViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 				543C88562145E28B0097D693 /* PostUserService.swift */,
 				540CDD3B2194F363007D9A1F /* PostGroupUserRelationService.swift */,
 				541F82032198E5C300B0024A /* FetchCurrentUserService.swift */,
+				543C295F21B0A31200837C0E /* SignInService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 				54011FB1217D352600466107 /* UserAuthorizationJson.swift */,
 				540CDD3D2194F3E3007D9A1F /* PostGroupUserRelationJson.swift */,
 				541F82052198E64A00B0024A /* AccountJson.swift */,
+				543C296121B0A41200837C0E /* SignInJson.swift */,
 			);
 			path = Jsons;
 			sourceTree = "<group>";
@@ -563,8 +572,11 @@
 				54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */,
 				540CDD3C2194F363007D9A1F /* PostGroupUserRelationService.swift in Sources */,
 				541F82042198E5C300B0024A /* FetchCurrentUserService.swift in Sources */,
+				543C296021B0A31200837C0E /* SignInService.swift in Sources */,
 				5434CE71218FAD91000BF896 /* PostGroupUserRelationController.swift in Sources */,
+				543C296221B0A41200837C0E /* SignInJson.swift in Sources */,
 				54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */,
+				543C295E21B0A24600837C0E /* SignInViewController.swift in Sources */,
 				543C88592145E2CB0097D693 /* PostUserJson.swift in Sources */,
 				54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */,
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
