@@ -347,7 +347,7 @@
                                 <rect key="frame" x="16" y="264" width="343" height="30"/>
                                 <state key="normal" title="サインイン"/>
                                 <connections>
-                                    <segue destination="NpT-mN-diR" kind="show" id="vpy-Xn-ki1"/>
+                                    <segue destination="NpT-mN-diR" kind="show" identifier="showGroupsFromSignInSegue" id="vpy-Xn-ki1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44H-a7-QDj">
