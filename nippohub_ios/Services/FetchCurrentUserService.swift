@@ -9,7 +9,7 @@
 import Foundation
 
 class FetchCurrentUserService {
-    static func call(callbackFunc: @escaping (AccountJson) -> Void) {
+    static func call(callbackFunc: @escaping (Account) -> Void) {
         let client = APIClient()
         let url = URL(string: "http://nippohub.com:3000/v1/account")
         
@@ -22,7 +22,7 @@ class FetchCurrentUserService {
             let decoder = JSONDecoder()
             let req = try? decoder.decode(AccountJson.self, from: data!)
             
-            callbackFunc(req!)
+            callbackFunc(req!.toDomainObject())
         }
     }
 }

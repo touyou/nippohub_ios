@@ -8,14 +8,8 @@
 
 import Foundation
 
-class User {
-    var nickname: String
-    var email: String?
+struct User {
+    let id: Int
+    let nickname: String
     let uid: String
-    
-    init(nickname: String, email: String?, uid: String) {
-        self.nickname = nickname
-        self.email = email
-        self.uid = uid
-    }
 }

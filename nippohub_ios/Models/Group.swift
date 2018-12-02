@@ -8,13 +8,8 @@
 
 import Foundation
 
-class Group {
-    // TODO: 初期化しない　
-    var name: String = ""
-    var description: String = ""
-    
-    init(name: String, description: String) {
-        self.name = name
-        self.description = description
-    }
+struct Group {
+    let id: Int
+    let name: String
+    let description: String
 }
