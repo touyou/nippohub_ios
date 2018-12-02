@@ -11,6 +11,7 @@ import Foundation
 struct UserAuthorizationJson: Codable {
     let id: Int
     let email: String
+    let uid: String
     let nickname: String
     let token: String
 }

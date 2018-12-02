@@ -11,8 +11,9 @@ import Foundation
 struct UserJson: Codable {
     let id: Int
     let nickname: String
+    let uid: String
     
     func toDomainObject() -> User {
-        return User(nickname: nickname, email: nil)
+        return User(nickname: nickname, email: nil, uid: uid)
     }
 }
