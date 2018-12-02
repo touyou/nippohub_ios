@@ -9,6 +9,7 @@
 import Foundation
 
 struct Group {
+    let id: Int
     let name: String
     let description: String
 }

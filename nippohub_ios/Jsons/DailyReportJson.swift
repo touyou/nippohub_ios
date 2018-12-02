@@ -15,6 +15,6 @@ struct DailyReportJson: Codable {
     let user: UserJson
     
     func toDomainObject() -> DailyReport {
-        return DailyReport(title: title, body: body, user: user.toDomainObject())
+        return DailyReport(id: id, title: title, body: body, user: user.toDomainObject())
     }
 }

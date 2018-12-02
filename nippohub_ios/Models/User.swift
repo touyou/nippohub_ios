@@ -9,6 +9,7 @@
 import Foundation
 
 struct User {
+    let id: Int
     let nickname: String
     let uid: String
 }
