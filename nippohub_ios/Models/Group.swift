@@ -9,9 +9,8 @@
 import Foundation
 
 class Group {
-    // TODO: 初期化しない　
-    var name: String = ""
-    var description: String = ""
+    let name: String
+    let description: String
     
     init(name: String, description: String) {
         self.name = name

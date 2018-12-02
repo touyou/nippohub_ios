@@ -9,8 +9,8 @@
 import Foundation
 
 class User {
-    var nickname: String
-    var email: String?
+    let nickname: String
+    let email: String?
     let uid: String
     
     init(nickname: String, email: String?, uid: String) {
