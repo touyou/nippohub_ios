@@ -8,14 +8,8 @@
 
 import Foundation
 
-class DailyReport {
+struct DailyReport {
     let title: String
     let body: String
     let user: User
-    
-    init(title: String, body: String, user: User) {
-        self.title = title
-        self.body = body
-        self.user = user
-    }
 }

@@ -8,12 +8,7 @@
 
 import Foundation
 
-class User {
+struct User {
     let nickname: String
     let uid: String
-    
-    init(nickname: String, uid: String) {
-        self.nickname = nickname
-        self.uid = uid
-    }
 }
