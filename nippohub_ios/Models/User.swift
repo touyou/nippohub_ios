@@ -10,12 +10,10 @@ import Foundation
 
 class User {
     let nickname: String
-    let email: String?
     let uid: String
     
-    init(nickname: String, email: String?, uid: String) {
+    init(nickname: String, uid: String) {
         self.nickname = nickname
-        self.email = email
         self.uid = uid
     }
 }

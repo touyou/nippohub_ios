@@ -12,4 +12,9 @@ struct AccountJson: Codable {
     let id: Int
     let email: String
     let nickname: String
+    
+    func toDomainObject() -> Account {
+        // TODO: uid実装
+        return Account(id: id, email: email, nickname: nickname, uid: "")
+    }
 }
