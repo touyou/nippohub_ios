@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction
     func createUser() {
-        let user = PostUserJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
+        let user = SignUpJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
         PostUserService.exec(user: user, callbackFunc: { userJson in
             let token = userJson.token
