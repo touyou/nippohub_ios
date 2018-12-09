@@ -8,8 +8,8 @@
 
 import Foundation
 
-class PostUserService {
-    static func exec(user: PostUserJson, callbackFunc: @escaping (UserAuthorizationJson) -> Void) {
+class SignUpService {
+    static func exec(user: SignUpJson, callbackFunc: @escaping (UserAuthorizationJson) -> Void) {
         let client = APIClient()
         let url = URL(string: "http://nippohub.com:3000/v1/account")
         let encoder = JSONEncoder()

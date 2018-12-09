@@ -21,10 +21,10 @@
 		543C295E21B0A24600837C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C295D21B0A24600837C0E /* SignInViewController.swift */; };
 		543C296021B0A31200837C0E /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C295F21B0A31200837C0E /* SignInService.swift */; };
 		543C296221B0A41200837C0E /* SignInJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C296121B0A41200837C0E /* SignInJson.swift */; };
-		543C88572145E28B0097D693 /* PostUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88562145E28B0097D693 /* PostUserService.swift */; };
-		543C88592145E2CB0097D693 /* PostUserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88582145E2CB0097D693 /* PostUserJson.swift */; };
+		543C88572145E28B0097D693 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88562145E28B0097D693 /* SignUpService.swift */; };
+		543C88592145E2CB0097D693 /* SignUpJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88582145E2CB0097D693 /* SignUpJson.swift */; };
 		546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38920D7189B00B6D46C /* AppDelegate.swift */; };
-		546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38B20D7189B00B6D46C /* ViewController.swift */; };
+		546EE38C20D7189B00B6D46C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38B20D7189B00B6D46C /* SignUpViewController.swift */; };
 		546EE38F20D7189B00B6D46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE38D20D7189B00B6D46C /* Main.storyboard */; };
 		546EE39420D7189D00B6D46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39320D7189D00B6D46C /* Assets.xcassets */; };
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
@@ -92,11 +92,11 @@
 		543C295D21B0A24600837C0E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		543C295F21B0A31200837C0E /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		543C296121B0A41200837C0E /* SignInJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInJson.swift; sourceTree = "<group>"; };
-		543C88562145E28B0097D693 /* PostUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserService.swift; sourceTree = "<group>"; };
-		543C88582145E2CB0097D693 /* PostUserJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserJson.swift; sourceTree = "<group>"; };
+		543C88562145E28B0097D693 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		543C88582145E2CB0097D693 /* SignUpJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpJson.swift; sourceTree = "<group>"; };
 		546EE38620D7189B00B6D46C /* nippohub_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nippohub_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE38920D7189B00B6D46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		546EE38B20D7189B00B6D46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		546EE38B20D7189B00B6D46C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		546EE38E20D7189B00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546EE39320D7189D00B6D46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546EE39620D7189D00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		46AC596F20E0809D00F3C62D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				546EE38B20D7189B00B6D46C /* ViewController.swift */,
+				546EE38B20D7189B00B6D46C /* SignUpViewController.swift */,
 				54B13AF820E053FC00083E6C /* GroupsViewController.swift */,
 				54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */,
 				54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */,
@@ -275,7 +275,7 @@
 				54E3A1C12120E5C800148AFD /* FetchDailyReportService.swift */,
 				54D88A9A213365C500F7E104 /* PostGroupService.swift */,
 				548F4399213C9CDF009B8783 /* PostDailyReportService.swift */,
-				543C88562145E28B0097D693 /* PostUserService.swift */,
+				543C88562145E28B0097D693 /* SignUpService.swift */,
 				540CDD3B2194F363007D9A1F /* PostGroupUserRelationService.swift */,
 				541F82032198E5C300B0024A /* FetchCurrentUserService.swift */,
 				543C295F21B0A31200837C0E /* SignInService.swift */,
@@ -293,7 +293,7 @@
 				54B3B2FE2117AE6B00BA93AA /* DailyReportsJson.swift */,
 				54D88A9C2133667E00F7E104 /* PostGroupJson.swift */,
 				548F439B213C9D97009B8783 /* PostDailyReportJson.swift */,
-				543C88582145E2CB0097D693 /* PostUserJson.swift */,
+				543C88582145E2CB0097D693 /* SignUpJson.swift */,
 				54011FB1217D352600466107 /* UserAuthorizationJson.swift */,
 				540CDD3D2194F3E3007D9A1F /* PostGroupUserRelationJson.swift */,
 				541F82052198E64A00B0024A /* AccountJson.swift */,
@@ -548,7 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
+				546EE38C20D7189B00B6D46C /* SignUpViewController.swift in Sources */,
 				548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */,
 				548F439E213C9F81009B8783 /* PostDailyReportViewController.swift in Sources */,
 				54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */,
@@ -566,7 +566,7 @@
 				54EA3E9E21866D9A00C574A6 /* AuthenticationToken.swift in Sources */,
 				54700C9A20FC16970048C029 /* DailyReportIndexTableViewCell.swift in Sources */,
 				54B13AF720E04B2C00083E6C /* Group.swift in Sources */,
-				543C88572145E28B0097D693 /* PostUserService.swift in Sources */,
+				543C88572145E28B0097D693 /* SignUpService.swift in Sources */,
 				54D88A9F21336A5800F7E104 /* PostGroupViewController.swift in Sources */,
 				541F82062198E64A00B0024A /* AccountJson.swift in Sources */,
 				54D88A9B213365C500F7E104 /* PostGroupService.swift in Sources */,
@@ -581,7 +581,7 @@
 				543C296221B0A41200837C0E /* SignInJson.swift in Sources */,
 				54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */,
 				543C295E21B0A24600837C0E /* SignInViewController.swift in Sources */,
-				543C88592145E2CB0097D693 /* PostUserJson.swift in Sources */,
+				543C88592145E2CB0097D693 /* SignUpJson.swift in Sources */,
 				54BCCD65210E73FE00CAD335 /* GroupJson.swift in Sources */,
 				54B3B2FF2117AE6B00BA93AA /* DailyReportsJson.swift in Sources */,
 				54700C9420FC11D60048C029 /* DailyReport.swift in Sources */,

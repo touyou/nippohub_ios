@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
     @IBOutlet var uidForm: UITextField!
     @IBOutlet var nicknameForm: UITextField!
     @IBOutlet var emailForm: UITextField!
@@ -33,9 +33,9 @@ class ViewController: UIViewController {
 
     @IBAction
     func createUser() {
-        let user = PostUserJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
+        let user = SignUpJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
-        PostUserService.exec(user: user, callbackFunc: { userJson in
+        SignUpService.exec(user: user, callbackFunc: { userJson in
             let token = userJson.token
             
             AuthenticationToken.set(token)

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PostUserJson: Codable {
+struct SignUpJson: Codable {
     let uid: String
     let nickname: String
     let email: String
