@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
     @IBOutlet var uidForm: UITextField!
     @IBOutlet var nicknameForm: UITextField!
     @IBOutlet var emailForm: UITextField!

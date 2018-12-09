@@ -24,7 +24,7 @@
 		543C88572145E28B0097D693 /* PostUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88562145E28B0097D693 /* PostUserService.swift */; };
 		543C88592145E2CB0097D693 /* PostUserJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C88582145E2CB0097D693 /* PostUserJson.swift */; };
 		546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38920D7189B00B6D46C /* AppDelegate.swift */; };
-		546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38B20D7189B00B6D46C /* ViewController.swift */; };
+		546EE38C20D7189B00B6D46C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546EE38B20D7189B00B6D46C /* SignUpViewController.swift */; };
 		546EE38F20D7189B00B6D46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE38D20D7189B00B6D46C /* Main.storyboard */; };
 		546EE39420D7189D00B6D46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39320D7189D00B6D46C /* Assets.xcassets */; };
 		546EE39720D7189D00B6D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546EE39520D7189D00B6D46C /* LaunchScreen.storyboard */; };
@@ -96,7 +96,7 @@
 		543C88582145E2CB0097D693 /* PostUserJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserJson.swift; sourceTree = "<group>"; };
 		546EE38620D7189B00B6D46C /* nippohub_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nippohub_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546EE38920D7189B00B6D46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		546EE38B20D7189B00B6D46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		546EE38B20D7189B00B6D46C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		546EE38E20D7189B00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546EE39320D7189D00B6D46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546EE39620D7189D00B6D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		46AC596F20E0809D00F3C62D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				546EE38B20D7189B00B6D46C /* ViewController.swift */,
+				546EE38B20D7189B00B6D46C /* SignUpViewController.swift */,
 				54B13AF820E053FC00083E6C /* GroupsViewController.swift */,
 				54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */,
 				54D88A9E21336A5800F7E104 /* PostGroupViewController.swift */,
@@ -548,7 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546EE38C20D7189B00B6D46C /* ViewController.swift in Sources */,
+				546EE38C20D7189B00B6D46C /* SignUpViewController.swift in Sources */,
 				548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */,
 				548F439E213C9F81009B8783 /* PostDailyReportViewController.swift in Sources */,
 				54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */,
