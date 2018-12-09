@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController {
     func createUser() {
         let user = SignUpJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
-        PostUserService.exec(user: user, callbackFunc: { userJson in
+        SignUpService.exec(user: user, callbackFunc: { userJson in
             let token = userJson.token
             
             AuthenticationToken.set(token)
