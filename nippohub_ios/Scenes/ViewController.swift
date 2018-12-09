@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var uidForm: UITextField!
     @IBOutlet var nicknameForm: UITextField!
     @IBOutlet var emailForm: UITextField!
     @IBOutlet var passwordFrom: UITextField!
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
 
     @IBAction
     func createUser() {
-        let user = PostUserJson(nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
+        let user = PostUserJson(uid: uidForm.text!, nickname: nicknameForm.text!, email: emailForm.text!, password: passwordFrom.text!, passwordConfirmation: passwordConfirmationForm.text!)
         
         PostUserService.exec(user: user, callbackFunc: { userJson in
             let token = userJson.token

@@ -9,12 +9,14 @@
 import Foundation
 
 struct PostUserJson: Codable {
+    let uid: String
     let nickname: String
     let email: String
     let password: String
     let passwordConfirmation: String
     
     private enum CodingKeys: String, CodingKey {
+        case uid = "uid"
         case nickname = "nickname"
         case email = "email"
         case password = "password"
