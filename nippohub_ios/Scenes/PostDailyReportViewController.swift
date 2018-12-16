@@ -24,7 +24,7 @@ class PostDailyReportViewController: UIViewController {
     
     @IBAction
     func postDailyReport() {
-        let dailyReport = PostDailyReportJson(title: titleForm.text!, body: bodyForm.text!)
+        let dailyReport = PostDailyReportJson(title: titleForm.text!, body: bodyForm.text!, date: Date())
         
         PostDailyReportService.exec(groupId: 1, dailyReport: dailyReport) {
             self.dismiss(animated: true, completion: nil)

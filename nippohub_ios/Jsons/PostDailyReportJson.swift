@@ -11,4 +11,5 @@ import Foundation
 struct PostDailyReportJson: Codable {
     let title: String
     let body: String
+    let date: Date
 }
