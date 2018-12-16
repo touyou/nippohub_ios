@@ -11,6 +11,7 @@ import UIKit
 class PostDailyReportViewController: UIViewController {
     @IBOutlet var titleForm: UITextField!
     @IBOutlet var bodyForm: UITextField!
+    @IBOutlet var dateForm: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class PostDailyReportViewController: UIViewController {
     
     @IBAction
     func postDailyReport() {
-        let dailyReport = PostDailyReportJson(title: titleForm.text!, body: bodyForm.text!)
+        let dailyReport = PostDailyReportJson(title: titleForm.text!, body: bodyForm.text!, date: dateForm.date)
         
         PostDailyReportService.exec(groupId: 1, dailyReport: dailyReport) {
             self.dismiss(animated: true, completion: nil)
