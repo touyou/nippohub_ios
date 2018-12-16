@@ -550,32 +550,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-Ue-Z5f">
-                                <rect key="frame" x="16" y="264" width="343" height="30"/>
-                                <state key="normal" title="作成"/>
-                                <connections>
-                                    <action selector="postDailyReport" destination="03L-0K-py0" eventType="touchDown" id="vZs-N1-zHN"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-fb-NGG">
                                 <rect key="frame" x="16" y="186" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gFn-Rx-9kT">
+                                <rect key="frame" x="16" y="236" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="566693764.59197402">
+                                    <!--2018-12-16 22:56:04 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-Ue-Z5f">
+                                <rect key="frame" x="16" y="580" width="343" height="30"/>
+                                <state key="normal" title="作成"/>
+                                <connections>
+                                    <action selector="postDailyReport" destination="03L-0K-py0" eventType="touchDown" id="vZs-N1-zHN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="br2-JL-gMj" firstAttribute="trailing" secondItem="9N9-fb-NGG" secondAttribute="trailing" constant="16" id="2QI-dO-8tn"/>
                             <constraint firstItem="9N9-fb-NGG" firstAttribute="top" secondItem="r3Y-Ba-A5j" secondAttribute="bottom" constant="5" id="5wj-lu-Ma4"/>
                             <constraint firstItem="0TH-8z-uT9" firstAttribute="leading" secondItem="br2-JL-gMj" secondAttribute="leading" constant="16" id="82R-lr-zZX"/>
+                            <constraint firstItem="gFn-Rx-9kT" firstAttribute="trailing" secondItem="br2-JL-gMj" secondAttribute="trailing" constant="16" id="DQl-W9-gqo"/>
+                            <constraint firstItem="qiy-Ue-Z5f" firstAttribute="top" secondItem="gFn-Rx-9kT" secondAttribute="bottom" constant="128" id="JdF-bl-rrL"/>
+                            <constraint firstItem="gFn-Rx-9kT" firstAttribute="leading" secondItem="br2-JL-gMj" secondAttribute="leading" constant="16" id="M4K-pa-Okd"/>
                             <constraint firstItem="Mvb-Ks-FGg" firstAttribute="leading" secondItem="br2-JL-gMj" secondAttribute="leading" constant="16" id="M8t-sF-7iM"/>
                             <constraint firstItem="r3Y-Ba-A5j" firstAttribute="top" secondItem="0TH-8z-uT9" secondAttribute="bottom" constant="20" id="NX3-7o-xVb"/>
                             <constraint firstItem="0TH-8z-uT9" firstAttribute="top" secondItem="Mvb-Ks-FGg" secondAttribute="bottom" constant="5" id="NXP-IZ-cKR"/>
                             <constraint firstItem="9N9-fb-NGG" firstAttribute="leading" secondItem="br2-JL-gMj" secondAttribute="leading" constant="16" id="PTG-Gs-mAx"/>
+                            <constraint firstItem="gFn-Rx-9kT" firstAttribute="top" secondItem="9N9-fb-NGG" secondAttribute="bottom" constant="20" id="Qpc-4x-Vzh"/>
                             <constraint firstItem="Mvb-Ks-FGg" firstAttribute="top" secondItem="br2-JL-gMj" secondAttribute="top" constant="64" id="Vy3-KX-PXx"/>
                             <constraint firstItem="br2-JL-gMj" firstAttribute="trailing" secondItem="Mvb-Ks-FGg" secondAttribute="trailing" constant="16" id="Y8P-cG-56V"/>
-                            <constraint firstItem="qiy-Ue-Z5f" firstAttribute="top" secondItem="9N9-fb-NGG" secondAttribute="bottom" constant="48" id="muC-zu-LI4"/>
                             <constraint firstItem="br2-JL-gMj" firstAttribute="trailing" secondItem="0TH-8z-uT9" secondAttribute="trailing" constant="16" id="o0b-bW-cNP"/>
                             <constraint firstItem="r3Y-Ba-A5j" firstAttribute="leading" secondItem="br2-JL-gMj" secondAttribute="leading" constant="16" id="oUK-lz-p3H"/>
                             <constraint firstItem="br2-JL-gMj" firstAttribute="trailing" secondItem="qiy-Ue-Z5f" secondAttribute="trailing" constant="16" id="rSW-L6-0ST"/>
@@ -586,12 +595,13 @@
                     </view>
                     <connections>
                         <outlet property="bodyForm" destination="9N9-fb-NGG" id="1cw-qi-M7V"/>
+                        <outlet property="dateForm" destination="gFn-Rx-9kT" id="eNK-KI-z5s"/>
                         <outlet property="titleForm" destination="0TH-8z-uT9" id="rkT-mV-uuj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XK-FD-dfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="887"/>
+            <point key="canvasLocation" x="2336.8000000000002" y="886.50674662668678"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
