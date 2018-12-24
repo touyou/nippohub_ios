@@ -17,6 +17,14 @@ class GroupUserRelationIndexViewController: UIViewController, UITableViewDelegat
         
         groupUserRelationIndexTableView.register(UINib(nibName: "GroupUserRelationIndexTableViewCell", bundle: nil), forCellReuseIdentifier: "userItem")
         
+        FetchGroupUserRelationsService.call(groupId: 1) { users in
+            self.users = users
+            
+            DispatchQueue.main.sync {
+                self.groupUserRelationIndexTableView.reloadData()
+            }
+        }
+        
         groupUserRelationIndexTableView.delegate = self
         groupUserRelationIndexTableView.dataSource = self
         groupUserRelationIndexTableView.reloadData()

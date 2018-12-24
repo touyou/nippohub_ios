@@ -38,6 +38,8 @@
 		5481680221D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680121D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift */; };
 		5481680421D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5481680321D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib */; };
 		5481680621D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680521D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift */; };
+		5481680821D0FBE50035AAB3 /* FetchGroupUserRelationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680721D0FBE50035AAB3 /* FetchGroupUserRelationsService.swift */; };
+		5481680A21D0FC270035AAB3 /* GroupUserRelationsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680921D0FC270035AAB3 /* GroupUserRelationsJson.swift */; };
 		5482C96921B49725004DAC41 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482C96821B49725004DAC41 /* Account.swift */; };
 		548F439A213C9CDF009B8783 /* PostDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F4399213C9CDF009B8783 /* PostDailyReportService.swift */; };
 		548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F439B213C9D97009B8783 /* PostDailyReportJson.swift */; };
@@ -118,6 +120,8 @@
 		5481680121D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserRelationIndexTableViewCell.swift; sourceTree = "<group>"; };
 		5481680321D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupUserRelationIndexViewCell.xib; sourceTree = "<group>"; };
 		5481680521D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserRelationIndexViewController.swift; sourceTree = "<group>"; };
+		5481680721D0FBE50035AAB3 /* FetchGroupUserRelationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGroupUserRelationsService.swift; sourceTree = "<group>"; };
+		5481680921D0FC270035AAB3 /* GroupUserRelationsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserRelationsJson.swift; sourceTree = "<group>"; };
 		5482C96821B49725004DAC41 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		548F4399213C9CDF009B8783 /* PostDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportService.swift; sourceTree = "<group>"; };
 		548F439B213C9D97009B8783 /* PostDailyReportJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportJson.swift; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 				540CDD3B2194F363007D9A1F /* PostGroupUserRelationService.swift */,
 				541F82032198E5C300B0024A /* FetchCurrentUserService.swift */,
 				543C295F21B0A31200837C0E /* SignInService.swift */,
+				5481680721D0FBE50035AAB3 /* FetchGroupUserRelationsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				540CDD3D2194F3E3007D9A1F /* PostGroupUserRelationJson.swift */,
 				541F82052198E64A00B0024A /* AccountJson.swift */,
 				543C296121B0A41200837C0E /* SignInJson.swift */,
+				5481680921D0FC270035AAB3 /* GroupUserRelationsJson.swift */,
 			);
 			path = Jsons;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 				54BCCD63210E73F400CAD335 /* UserJson.swift in Sources */,
 				546EE38A20D7189B00B6D46C /* AppDelegate.swift in Sources */,
 				5482C96921B49725004DAC41 /* Account.swift in Sources */,
+				5481680821D0FBE50035AAB3 /* FetchGroupUserRelationsService.swift in Sources */,
 				5481680221D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift in Sources */,
 				54D88A9D2133667E00F7E104 /* PostGroupJson.swift in Sources */,
 				46AC596D20E07E5600F3C62D /* GroupIndexTableViewCell.swift in Sources */,
@@ -583,6 +590,7 @@
 				54D88A9B213365C500F7E104 /* PostGroupService.swift in Sources */,
 				54BCCD60210E6EFA00CAD335 /* FetchGroupsService.swift in Sources */,
 				54E3A1C02120E34300148AFD /* FetchGroupService.swift in Sources */,
+				5481680A21D0FC270035AAB3 /* GroupUserRelationsJson.swift in Sources */,
 				54B13AF920E053FC00083E6C /* GroupsViewController.swift in Sources */,
 				54E3A1C22120E5C800148AFD /* FetchDailyReportService.swift in Sources */,
 				540CDD3C2194F363007D9A1F /* PostGroupUserRelationService.swift in Sources */,
