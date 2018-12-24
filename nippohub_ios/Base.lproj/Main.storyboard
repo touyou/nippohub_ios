@@ -188,6 +188,28 @@
             </objects>
             <point key="canvasLocation" x="710" y="-675"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="giC-Rc-Mpk">
+            <objects>
+                <viewController id="aJO-Td-cu8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qls-Kb-zXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-nO-i0g">
+                                <rect key="frame" x="16" y="122" width="343" height="525"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RD0-0a-5Xg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOy-Ww-v9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="-675.11244377811101"/>
+        </scene>
         <!--Groups View Controller-->
         <scene sceneID="DBl-13-lGb">
             <objects>
@@ -282,6 +304,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-FP-a5x">
+                                <rect key="frame" x="16" y="69" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KiY-Of-WkD"/>
@@ -289,6 +316,7 @@
                     <connections>
                         <outlet property="dailyReportIndexTable" destination="bJD-ku-CmP" id="a9T-bk-hd4"/>
                         <segue destination="u7Z-J5-MHi" kind="show" identifier="showDailyReportSegue" id="wJM-47-7O9"/>
+                        <segue destination="aJO-Td-cu8" kind="show" identifier="showGroupUserRelationIndexSegue" id="STO-EI-dTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNQ-w8-zyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -605,7 +633,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W8V-ry-8hf"/>
-        <segue reference="HX6-72-gyS"/>
+        <segue reference="vpy-Xn-ki1"/>
+        <segue reference="tvX-KH-SwK"/>
     </inferredMetricsTieBreakers>
 </document>
