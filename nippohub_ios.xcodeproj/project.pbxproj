@@ -37,6 +37,7 @@
 		54700C9D20FC18DA0048C029 /* DailyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */; };
 		5481680221D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680121D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift */; };
 		5481680421D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5481680321D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib */; };
+		5481680621D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481680521D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift */; };
 		5482C96921B49725004DAC41 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482C96821B49725004DAC41 /* Account.swift */; };
 		548F439A213C9CDF009B8783 /* PostDailyReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F4399213C9CDF009B8783 /* PostDailyReportService.swift */; };
 		548F439C213C9D97009B8783 /* PostDailyReportJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F439B213C9D97009B8783 /* PostDailyReportJson.swift */; };
@@ -116,6 +117,7 @@
 		54700C9C20FC18DA0048C029 /* DailyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsViewController.swift; sourceTree = "<group>"; };
 		5481680121D0F8850035AAB3 /* GroupUserRelationIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserRelationIndexTableViewCell.swift; sourceTree = "<group>"; };
 		5481680321D0F8D30035AAB3 /* GroupUserRelationIndexViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupUserRelationIndexViewCell.xib; sourceTree = "<group>"; };
+		5481680521D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserRelationIndexViewController.swift; sourceTree = "<group>"; };
 		5482C96821B49725004DAC41 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		548F4399213C9CDF009B8783 /* PostDailyReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportService.swift; sourceTree = "<group>"; };
 		548F439B213C9D97009B8783 /* PostDailyReportJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDailyReportJson.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				5434CE70218FAD91000BF896 /* PostGroupUserRelationController.swift */,
 				541F82012198E50500B0024A /* AccountViewController.swift */,
 				543C295D21B0A24600837C0E /* SignInViewController.swift */,
+				5481680521D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				543C296021B0A31200837C0E /* SignInService.swift in Sources */,
 				5434CE71218FAD91000BF896 /* PostGroupUserRelationController.swift in Sources */,
 				543C296221B0A41200837C0E /* SignInJson.swift in Sources */,
+				5481680621D0FA210035AAB3 /* GroupUserRelationIndexViewController.swift in Sources */,
 				54B3B2FA2117AB6500BA93AA /* FetchDailyReportsService.swift in Sources */,
 				543C295E21B0A24600837C0E /* SignInViewController.swift in Sources */,
 				543C88592145E2CB0097D693 /* SignUpJson.swift in Sources */,
